@@ -11,14 +11,13 @@ import lombok.experimental.SuperBuilder;
 @Setter
 @SuperBuilder
 
-
 public class Person{
     private int id;
     private String name;
 
-
     @Override
     public String toString() {
+        // Comment
         return new Gson().toJson(this);
     }
 }
